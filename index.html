@@ -80,7 +80,7 @@
   </header>
 
   <!-- mobile menu -->
-    <aside id="mobile-menu" class="mobile-menu" hidden>
+    <aside id="mobile-menu" class="mobile-menu hidden" aria-label="Mobile menu">
       <nav class="mobile-menu__nav" aria-label="Mobile navigation">
         <button class="mobile-menu__close" aria-label="Close menu">
           <img src="./images/icon-close-menu.svg" alt="">
@@ -88,21 +88,35 @@
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item mobile-menu__item--has-dropdown">
           <button class="mobile-menu__link" aria-expanded="false" aria-controls="features-menu-mobile">
-            Features
+            Features 
+            <img src="./images/icon-arrow-down.svg" alt="" class="mobile-menu__arrow">
           </button>
-          <ul id="features-menu-mobile" class="mobile-menu__dropdown" hidden>
-            <li><a href="#" class="mobile-menu__dropdown-link">Todo List</a></li>
-            <li><a href="#" class="mobile-menu__dropdown-link">Calendar</a></li>
-            <li><a href="#" class="mobile-menu__dropdown-link">Reminders</a></li>
-            <li><a href="#" class="mobile-menu__dropdown-link">Planning</a></li>
+          <ul id="features-menu-mobile" class="mobile-menu__dropdown hidden" >
+            <li><a href="#" class="mobile-menu__dropdown-link">
+              <img src="./images/icon-todo.svg" alt="" class="mobile-menu__dropdown-icon">
+              Todo List
+            </a></li>
+            <li><a href="#" class="mobile-menu__dropdown-link">
+              <img src="./images/icon-calendar.svg" alt="" class="mobile-menu__dropdown-icon">
+              Calendar
+            </a></li>
+            <li><a href="#" class="mobile-menu__dropdown-link">
+              <img src="./images/icon-reminders.svg" alt="" class="mobile-menu__dropdown-icon">
+              Reminders
+            </a></li>
+            <li><a href="#" class="mobile-menu__dropdown-link">
+              <img src="./images/icon-planning.svg" alt="" class="mobile-menu__dropdown-icon">
+              Planning
+            </a></li>
           </ul>
         </li>
 
         <li class="mobile-menu__item mobile-menu__item--has-dropdown">
           <button class="mobile-menu__link" aria-expanded="false" aria-controls="company-menu">
             Company
+            <img src="./images/icon-arrow-down.svg" alt="" class="mobile-menu__arrow">
           </button>
-          <ul id="company-menu-mobile" class="mobile-menu__dropdown" hidden>
+          <ul id="company-menu-mobile" class="mobile-menu__dropdown hidden">
             <li><a href="#" class="mobile-menu__dropdown-link">History</a></li>
             <li><a href="#" class="mobile-menu__dropdown-link">Our Team</a></li>
             <li><a href="#" class="mobile-menu__dropdown-link">Blog</a></li>
