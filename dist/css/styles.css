@@ -1,0 +1,180 @@
+:root {
+  --Gray-50: hsl(0, 0%, 98%);
+  --Gray-500: hsl(0, 0%, 41%);
+  --Gray-950: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../../fonts/Epilogue-Regular.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 68rem;
+  margin: 0 auto;
+  font-family: "Epilogue", sans-serif;
+  color: var(--Gray-500);
+}
+@media (min-width: 64rem) {
+  .container {
+    height: 100vh;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+@media (min-width: 64rem) {
+  .nav {
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+}
+
+.nav__menu {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .nav__menu {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.nav__auth {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .nav__auth {
+    margin-left: auto;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.nav__btn--register {
+  border: 1px solid var(--Gray-500);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+@media (min-width: 64rem) {
+  .nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 64rem) {
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    height: 100%;
+  }
+}
+
+.intro__hero {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+@media (min-width: 64rem) {
+  .intro__content {
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.intro__title {
+  font-size: 2.25rem;
+  text-align: center;
+  color: var(--Gray-950);
+}
+@media (min-width: 64rem) {
+  .intro__title {
+    font-size: 3.75rem;
+    text-align: left;
+  }
+}
+
+.intro__description {
+  font-size: 1.125rem;
+  text-align: center;
+}
+@media (min-width: 64rem) {
+  .intro__description {
+    text-align: left;
+  }
+}
+
+.intro__btn {
+  background-color: var(--Gray-950);
+  font-weight: 700;
+  color: var(--Gray-50);
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+}
+
+.intro__clients {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__client-logo {
+  max-width: 100%;
+}
+
+a, button {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+a:hover, button:hover {
+  transform: scale(1.2);
+  color: var(--Gray-950);
+}
+
+a:active, button:active, a:focus, button:focus, a:focus-visible, button:focus-visible {
+  transform: scale(0.9);
+}
+
+.intro__btn:hover, .nav__btn--register:hover {
+  background-color: var(--Gray-50);
+  border: 2px solid var(--Gray-950);
+}/*# sourceMappingURL=styles.css.map */
