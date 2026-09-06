@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <meta name="description" content="Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar">
+  
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#" class="nav__logo">
+        <img src="./images/logo.svg" alt="Snap" >
+      </a>
+      <!-- desktop menu -->
+      <ul class="nav__menu">
+        <li class="nav__item nav__item--has-dropdown">
+          <button class="nav__link" aria-expanded="false" aria-controls="features-menu">
+            Features
+          </button>
+          <ul id="features-menu" class="nav__dropdown" hidden>
+            <li><a href="#" class="nav__dropdown-link">Todo List</a></li>
+            <li><a href="#" class="nav__dropdown-link">Calendar</a></li>
+            <li><a href="#" class="nav__dropdown-link">Reminders</a></li>
+            <li><a href="#" class="nav__dropdown-link">Planning</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--has-dropdown">
+          <button class="nav__link" aria-expanded="false" aria-controls="company-menu">
+            Company
+          </button>
+          <ul id="company-menu" class="nav__dropdown" hidden>
+            <li><a href="#" class="nav__dropdown-link">History</a></li>
+            <li><a href="#" class="nav__dropdown-link">Our Team</a></li>
+            <li><a href="#" class="nav__dropdown-link">Blog</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">About</a>
+        </li>
+      </ul>
+      <!-- authentication buttons -->
+      <div class="nav__auth">
+        <button class="nav__btn nav__btn--login">Login</button>
+        <button class="nav__btn nav__btn--register">Register</button>  
+      </div>
+      <!-- mobile menu toggle -->
+      <button class="nav__toggle" aria-expanded="false" aria-haspopup="menu" aria-controls="mobile-menu" aria-label="Open menu">
+        <img src="./images/icon-menu.svg" alt="" >
+      </button>
+    </nav>
+  </header>
+  <!-- mobile menu -->
+    <aside id="mobile-menu" class="mobile-menu" hidden>
+      <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+        <button class="mobile-menu__close" aria-label="Close menu">
+          <img src="./images/icon-close-menu.svg" alt="">
+        </button>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item mobile-menu__item--has-dropdown">
+          <button class="mobile-menu__link" aria-expanded="false" aria-controls="features-menu-mobile">
+            Features
+          </button>
+          <ul id="features-menu-mobile" class="mobile-menu__dropdown" hidden>
+            <li><a href="#" class="mobile-menu__dropdown-link">Todo List</a></li>
+            <li><a href="#" class="mobile-menu__dropdown-link">Calendar</a></li>
+            <li><a href="#" class="mobile-menu__dropdown-link">Reminders</a></li>
+            <li><a href="#" class="mobile-menu__dropdown-link">Planning</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-menu__item mobile-menu__item--has-dropdown">
+          <button class="mobile-menu__link" aria-expanded="false" aria-controls="company-menu">
+            Company
+          </button>
+          <ul id="company-menu-mobile" class="mobile-menu__dropdown" hidden>
+            <li><a href="#" class="mobile-menu__dropdown-link">History</a></li>
+            <li><a href="#" class="mobile-menu__dropdown-link">Our Team</a></li>
+            <li><a href="#" class="mobile-menu__dropdown-link">Blog</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Careers</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">About</a>
+        </li>
+      </ul>
+      <!-- authentication buttons -->
+      <div class="mobile-menu__auth">
+        <button class="mobile-menu__btn mobile-menu__btn--login">Login</button>
+        <button class="mobile-menu__btn mobile-menu__btn--register">Register</button>  
+      </div>
+      </nav>
+    </aside>
+    <!-- main content -->
+  <main class="main">
+    <section class="intro">
+       <picture class="intro__image">
+        <source media="(min-width: 768px)" srcset="./images/image-hero-desktop.png">
+        <img src="./images/image-hero-mobile.png" alt="Man working remotely on a laptop" class="intro__hero">
+      </picture>
+      <div class="intro__content">
+        <h1 class="intro__title">Make remote work</h1>
+        <p class="intro__description">Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+        <button class="intro__btn">Learn more</button>
+        <ul class="intro__clients">
+          <li><a href="#"><img src="./images/client-databiz.svg" alt="databiz logo"></a></li>
+          <li><a href="#"><img src="./images/client-audiophile.svg" alt="audiophile logo"></a></li>
+          <li><a href="#"><img src="./images/client-meet.svg" alt="meet logo"></a></li>
+          <li><a href="#"><img src="./images/client-maker.svg" alt="maker logo"></a></li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
