@@ -1,4 +1,4 @@
-const desktopDropdownBtn = document.querySelectorAll('.nav__item--has-dropdown');
+const desktopDropdownBtn = document.querySelectorAll('.nav__link');
 const desktopDropdownCard = document.querySelectorAll('.nav__dropdown');
 const desktopDropdownArrow = document.querySelectorAll('.nav__arrow');
 
@@ -18,7 +18,7 @@ toggleDropdowns(desktopDropdownBtn, desktopDropdownCard, desktopDropdownArrow);
 const mobileMenuOpenBtn = document.querySelector('.nav__toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileMenuCloseBtn = document.querySelector('.mobile-menu__close');
-const mobileDropdownBtn = document.querySelectorAll('.mobile-menu__item--has-dropdown');
+const mobileDropdownBtn = document.querySelectorAll('.mobile-menu__link');
 const mobileDropdownCard = document.querySelectorAll('.mobile-menu__dropdown');
 const mobileDropdownArrow = document.querySelectorAll('.mobile-menu__arrow');   
 //open mobile menu

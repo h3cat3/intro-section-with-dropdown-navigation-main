@@ -27,6 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
+![](./screenshots/Nest%20Hub%20Max-1788705834200.jpeg)![](./screenshots/Nest%20Hub%20Max-1788705844142.jpeg)![](./screenshots/Pixel%202%20XL-1788705791475.jpeg)![](./screenshots/Pixel%202%20XL-1788705804852.jpeg)![](./screenshots/Pixel%202%20XL-1788705811158.jpeg)
+
 
 ### Links
 
