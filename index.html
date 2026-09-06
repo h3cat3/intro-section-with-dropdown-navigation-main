@@ -24,21 +24,36 @@
       <ul class="nav__menu">
         <li class="nav__item nav__item--has-dropdown">
           <button class="nav__link" aria-expanded="false" aria-controls="features-menu">
-            Features
+            Features 
+            <img src="./images/icon-arrow-down.svg" alt="" class="nav__arrow">
+            
           </button>
-          <ul id="features-menu" class="nav__dropdown" hidden>
-            <li><a href="#" class="nav__dropdown-link">Todo List</a></li>
-            <li><a href="#" class="nav__dropdown-link">Calendar</a></li>
-            <li><a href="#" class="nav__dropdown-link">Reminders</a></li>
-            <li><a href="#" class="nav__dropdown-link">Planning</a></li>
+          <ul id="features-menu" class="nav__dropdown nav__dropdown--features hidden">
+            <li><a href="#" class="nav__dropdown-link">
+              <img src="./images/icon-todo.svg" alt="" class="nav__dropdown-icon"> 
+              Todo List
+            </a></li>
+            <li><a href="#" class="nav__dropdown-link">
+              <img src="./images/icon-calendar.svg" alt="" class="nav__dropdown-icon">
+              Calendar
+            </a></li>
+            <li><a href="#" class="nav__dropdown-link">
+              <img src="./images/icon-reminders.svg" alt="" class="nav__dropdown-icon">
+              Reminders
+            </a></li>
+            <li><a href="#" class="nav__dropdown-link">
+              <img src="./images/icon-planning.svg" alt="" class="nav__dropdown-icon">
+              Planning
+            </a></li>
           </ul>
         </li>
 
         <li class="nav__item nav__item--has-dropdown">
           <button class="nav__link" aria-expanded="false" aria-controls="company-menu">
-            Company
+            Company 
+            <img src="./images/icon-arrow-down.svg" alt="" class="nav__arrow">
           </button>
-          <ul id="company-menu" class="nav__dropdown" hidden>
+          <ul id="company-menu" class="nav__dropdown hidden">
             <li><a href="#" class="nav__dropdown-link">History</a></li>
             <li><a href="#" class="nav__dropdown-link">Our Team</a></li>
             <li><a href="#" class="nav__dropdown-link">Blog</a></li>
@@ -63,6 +78,7 @@
       </button>
     </nav>
   </header>
+
   <!-- mobile menu -->
     <aside id="mobile-menu" class="mobile-menu" hidden>
       <nav class="mobile-menu__nav" aria-label="Mobile navigation">
@@ -112,7 +128,7 @@
   <main class="main">
     <section class="intro">
        <picture class="intro__image">
-        <source media="(min-width: 768px)" srcset="./images/image-hero-desktop.png">
+        <source media="(min-width: 64rem)" srcset="./images/image-hero-desktop.png">
         <img src="./images/image-hero-mobile.png" alt="Man working remotely on a laptop" class="intro__hero">
       </picture>
       <div class="intro__content">
@@ -130,6 +146,6 @@
 
     </section>
   </main>
-
+<script src="main.js"></script>
 </body>
 </html>
